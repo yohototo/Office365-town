@@ -61,8 +61,3 @@ Grant-CsOnlineVoiceRoutingPolicy -Identity $scidentity -PolicyName Australia
 
 Read-Host -Prompt "Press [Enter] to continue"
 
-Get-CsOnlineUser -Identity $scidentity | Format-List -Property FirstName, LastName, EnterpriseVoiceEnabled, HostedVoiceMail, LineURI, UsageLocation, UserPrincipalName, WindowsEmailAddress, SipAddress, OnPremLineURI, OnlineVoiceRoutingPolicy, TeamsCallingPolicy, dialplan, TeamsInteropPolicy
-
-Read-Host -Prompt "Press [Enter] to continue"
-
-write-host -foregroundcolor cyan "`nScript completed`n"
